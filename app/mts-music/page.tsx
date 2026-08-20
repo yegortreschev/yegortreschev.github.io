@@ -66,7 +66,7 @@ export default function MtsMusicPage() {
 
       <section className="caseResult">
         <h2>Результат</h2>
-        <div className="mtsResults"><div className="resultBadge"><strong>2 мес.</strong><span>На весь дизайн-процесс</span></div><div className="resultBadge"><strong>4 мес.</strong><span>От старта дизайна<br />до первых тестов MVP</span></div></div>
+        <div className="mtsResults"><div className="resultBadge"><strong>2 мес.</strong><span>На весь дизайн-процесс</span></div><div className="resultBadge"><strong>6 мес.</strong><span>От старта дизайна<br />до первых тестов MVP</span></div></div>
       </section>
     </main>
     <footer className="caseFooter caseShell"><span>© Егор Трещев 2026</span><a id="contact" href="#contact">Написать в телеграм</a></footer>
