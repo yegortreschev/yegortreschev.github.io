@@ -1,8 +1,10 @@
+import NextCase from "../NextCase";
+
 function Header() {
   return <header className="caseHeader">
     <div className="deskShell caseHeaderInner">
-      <nav><a href="/#work">Кейсы</a><a href="/#about">Обо мне</a></nav>
-      <nav><a href="/cv.pdf" download>Скачать CV</a><a href="#contact">Телеграм</a></nav>
+      <nav><a href="/#work">Кейсы</a><a href="/#hobbies">Обо мне</a></nav>
+      <nav><a href="/cv.pdf" download>Скачать CV</a><a href="https://t.me/yegortreschev" target="_blank" rel="noreferrer">Телеграм</a></nav>
     </div>
   </header>;
 }
@@ -68,6 +70,7 @@ export default function FormDesignSystemPage() {
         </div>
       </section>
     </main>
-    <footer className="caseFooter caseShell"><span>© Егор Трещев 2026</span><a id="contact" href="#contact">Написать в телеграм</a></footer>
+    <NextCase href="/credit-redesign" image="Case1.png" title="Анкета на кредит в мобильном приложении Альфа-Банка" />
+    <footer className="caseFooter caseShell"><span>© Егор Трещев 2026</span><a href="https://t.me/yegortreschev" target="_blank" rel="noreferrer">Написать в телеграм</a></footer>
   </div>;
 }

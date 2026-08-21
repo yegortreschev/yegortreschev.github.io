@@ -1,3 +1,5 @@
+import NextCase from "../NextCase";
+
 const designBlocks = [
   { title: "Обмен", images: ["Trade.png", "Trade2.png"], alt: "Редизайн раздела обмена Cs.Money" },
   { title: "Магазин", images: ["Store.png"], alt: "Редизайн магазина Cs.Money" },
@@ -9,8 +11,8 @@ const designBlocks = [
 function Header() {
   return <header className="caseHeader">
     <div className="deskShell caseHeaderInner">
-      <nav><a href="/#work">Кейсы</a><a href="/#about">Обо мне</a></nav>
-      <nav><a href="/cv.pdf" download>Скачать CV</a><a href="#contact">Телеграм</a></nav>
+      <nav><a href="/#work">Кейсы</a><a href="/#hobbies">Обо мне</a></nav>
+      <nav><a href="/cv.pdf" download>Скачать CV</a><a href="https://t.me/yegortreschev" target="_blank" rel="noreferrer">Телеграм</a></nav>
     </div>
   </header>;
 }
@@ -71,6 +73,7 @@ export default function CsMoneyPage() {
         </div>
       </section>
     </main>
-    <footer className="caseFooter caseShell"><span>© Егор Трещев 2026</span><a id="contact" href="#contact">Написать в телеграм</a></footer>
+    <NextCase href="/form-design-system" image="Case4.png" title="Лидирование дизайн-системы анкет сайта Альфа-Банка" />
+    <footer className="caseFooter caseShell"><span>© Егор Трещев 2026</span><a href="https://t.me/yegortreschev" target="_blank" rel="noreferrer">Написать в телеграм</a></footer>
   </div>;
 }
