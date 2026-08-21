@@ -25,7 +25,7 @@ export default function FormDesignSystemPage() {
       <section className="caseSection taskSection">
         <h2>Задача</h2>
         <p>Анкеты на сайте Альфа-Банка разрослись, каждая форма имеет уникальный дизайн, что портит UX.<br />Нужно организовать работу дизайн-команды для создания единой дизайн-системы анкет</p>
-        <div className="taskVisual"><img src="/case-design-system/Thumb.png" alt="Работа над задачами, ветками и документацией дизайн-системы" /></div>
+        <div className="taskVisual"><img decoding="async" fetchPriority="high" src="/case-design-system/Thumb.webp" alt="Работа над задачами, ветками и документацией дизайн-системы" /></div>
       </section>
 
       <section className="caseSection">
@@ -33,28 +33,28 @@ export default function FormDesignSystemPage() {
         <p>Собрал все анкеты на сайте, изучил, насколько они отличаются</p>
         <ImageCard>
           <h3>Конкуренты, игры, схожие сервисы</h3>
-          <img src="/case-design-system/Reserch.png" alt="Исследование анкет, конкурентов, игр и схожих сервисов" />
+          <img loading="lazy" decoding="async" src="/case-design-system/Reserch.webp" alt="Исследование анкет, конкурентов, игр и схожих сервисов" />
         </ImageCard>
       </section>
 
       <section className="caseSection">
         <h2>Наполнение бэклога</h2>
         <p>Вместе с ответственным за гайды дизайн-системы анкет сделали бэклог задач на создание<br />компонентов, виджетов и гайдов.</p>
-        <ImageCard className="dsImageOnly dsBacklog"><img src="/case-design-system/Backlog.png" alt="Бэклог задач дизайн-системы анкет" /></ImageCard>
+        <ImageCard className="dsImageOnly dsBacklog"><img loading="lazy" decoding="async" src="/case-design-system/Backlog.webp" alt="Бэклог задач дизайн-системы анкет" /></ImageCard>
       </section>
 
       <section className="caseSection">
         <h2>Ревью созданных компонентов и виджетов,<br />работа с ветками</h2>
         <p>Вёл задачу от постановки на дизайнера до контроля разработки. Проводил ревью дизайнерской ветки,<br />объединял с main-веткой, следил за обновлениями из общебанковской дизайн-системы.</p>
-        <ImageCard className="dsBranches"><h3>Ветки</h3><img src="/case-design-system/Branches.png" alt="Ветки компонентов дизайн-системы" /></ImageCard>
-        <ImageCard><h3>Пример описания виджета библиотеки анкет</h3><img src="/case-design-system/Description.png" alt="Документация виджета библиотеки анкет" /></ImageCard>
+        <ImageCard className="dsBranches"><h3>Ветки</h3><img loading="lazy" decoding="async" src="/case-design-system/Branches.webp" alt="Ветки компонентов дизайн-системы" /></ImageCard>
+        <ImageCard><h3>Пример описания виджета библиотеки анкет</h3><img loading="lazy" decoding="async" src="/case-design-system/Description.webp" alt="Документация виджета библиотеки анкет" /></ImageCard>
       </section>
 
       <section className="caseSection">
         <h2>Гайды</h2>
         <p>Гайды дизайн-системы анкет лидил другой дизайнер. Я помогал в их ревью, проверял соответствие<br />с библиотекой виджетов и компонентов</p>
-        <ImageCard className="dsStructure"><h3>Структура гайдов анкет</h3><img src="/case-design-system/Structure.png" alt="Структура гайдов дизайн-системы анкет" /></ImageCard>
-        <ImageCard><h3>Пример описания гайдов анкет</h3><img src="/case-design-system/Guides.png" alt="Пример гайда по системе отступов в анкетах" /></ImageCard>
+        <ImageCard className="dsStructure"><h3>Структура гайдов анкет</h3><img loading="lazy" decoding="async" src="/case-design-system/Structure.webp" alt="Структура гайдов дизайн-системы анкет" /></ImageCard>
+        <ImageCard><h3>Пример описания гайдов анкет</h3><img loading="lazy" decoding="async" src="/case-design-system/Guides.webp" alt="Пример гайда по системе отступов в анкетах" /></ImageCard>
       </section>
 
       <section className="caseSection dsFrontend">
@@ -70,7 +70,7 @@ export default function FormDesignSystemPage() {
         </div>
       </section>
     </main>
-    <NextCase href="/credit-redesign" image="Case1.png" title="Анкета на кредит в мобильном приложении Альфа-Банка" />
+    <NextCase href="/credit-redesign" image="Case1.webp" title="Анкета на кредит в мобильном приложении Альфа-Банка" />
     <footer className="caseFooter caseShell"><span>© Егор Трещев 2026</span><a href="https://t.me/yegortreschev" target="_blank" rel="noreferrer">Написать в телеграм</a></footer>
   </div>;
 }

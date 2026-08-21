@@ -1,9 +1,9 @@
 import NextCase from "../NextCase";
 
 const blocks = [
-  { title: "Первый шаг анкеты", image: "First_step.png", alt: "Сравнение первого шага анкеты до и после редизайна" },
-  { title: "Второй шаг анкеты", image: "Second_step.png", alt: "Сравнение второго шага анкеты до и после редизайна" },
-  { title: "Скоринг", image: "Scoring.png", alt: "Сравнение экрана скоринга до и после редизайна" },
+  { title: "Первый шаг анкеты", image: "First_step.webp", alt: "Сравнение первого шага анкеты до и после редизайна" },
+  { title: "Второй шаг анкеты", image: "Second_step.webp", alt: "Сравнение второго шага анкеты до и после редизайна" },
+  { title: "Скоринг", image: "Scoring.webp", alt: "Сравнение экрана скоринга до и после редизайна" },
 ] as const;
 
 function Header() {
@@ -31,7 +31,7 @@ export default function CreditRedesignPage() {
       <section className="caseSection taskSection">
         <h2>Задача</h2>
         <p>Поднять конверсию в выдачу кредита <span className="caseLink">(CR2)</span></p>
-        <div className="taskVisual"><img src="/case-credit/Case1.png" alt="Новая анкета, экран скоринга и экран одобренного кредита" /></div>
+        <div className="taskVisual"><img decoding="async" fetchPriority="high" src="/case-credit/Case1.webp" alt="Новая анкета, экран скоринга и экран одобренного кредита" /></div>
       </section>
 
       <section className="caseSection">
@@ -40,14 +40,14 @@ export default function CreditRedesignPage() {
         <ImageCard className="researchCard">
           <h3>Скриншоты подготовки исследования</h3>
           <p>План, гипотезы, часть скрипта</p>
-          <img src="/case-credit/Podgotovka_issled.png" alt="План, гипотезы и часть скрипта исследования" />
+          <img loading="lazy" decoding="async" src="/case-credit/Podgotovka_issled.webp" alt="План, гипотезы и часть скрипта исследования" />
         </ImageCard>
 
         <h2 className="researchResultsTitle">Результаты исследования</h2>
         <ImageCard>
           <h3>Главные проблемы текущей анкеты</h3>
           <p>Которые выявил на исследовании</p>
-          <img src="/case-credit/Results_issled.png" alt="Основные проблемы текущей кредитной анкеты" />
+          <img loading="lazy" decoding="async" src="/case-credit/Results_issled.webp" alt="Основные проблемы текущей кредитной анкеты" />
         </ImageCard>
       </section>
 
@@ -56,12 +56,12 @@ export default function CreditRedesignPage() {
         <div className="solutionStack">
           {blocks.map(block => <ImageCard key={block.image}>
             <h3>{block.title}</h3>
-            <img src={`/case-credit/${block.image}`} alt={block.alt} />
+            <img loading="lazy" decoding="async" src={`/case-credit/${block.image}`} alt={block.alt} />
           </ImageCard>)}
           <ImageCard>
             <h3>Одобренный кредит</h3>
             <p>На исследовании пользователи отмечали, что этот шаг считывается,<br />как каталог. В новом дизайне переходим в этот формат</p>
-            <img src="/case-credit/Odobrenny_credit.png" alt="Сравнение экрана одобренного кредита до и после редизайна" />
+            <img loading="lazy" decoding="async" src="/case-credit/Odobrenny_credit.webp" alt="Сравнение экрана одобренного кредита до и после редизайна" />
           </ImageCard>
         </div>
       </section>
@@ -71,7 +71,7 @@ export default function CreditRedesignPage() {
         <div className="resultBadge"><strong>+11 п.п.</strong><span>Общая конверсия<br />в выдачу кредита</span></div>
       </section>
     </main>
-    <NextCase href="/mts-music" image="Case3.png" title="Приложение МТС Музыки для автомобиля" />
+    <NextCase href="/mts-music" image="Case3.webp" title="Приложение МТС Музыки для автомобиля" />
     <footer className="caseFooter caseShell"><span>© Егор Трещев 2026</span><a href="https://t.me/yegortreschev" target="_blank" rel="noreferrer">Написать в телеграм</a></footer>
   </div>;
 }
