@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
-import { headers } from "next/headers";
 import "./globals.css";
 const title = "Егор Трещев — Product Designer";
 const description = "Портфолио продуктового дизайнера Егора Трещева. 8+ лет опыта в продуктовых интерфейсах, growth-задачах и дизайн-системах.";
-export async function generateMetadata(): Promise<Metadata> {
-  const requestHeaders = await headers();
-  const host = requestHeaders.get("x-forwarded-host") ?? requestHeaders.get("host") ?? "localhost:3000";
-  const protocol = requestHeaders.get("x-forwarded-proto") ?? (host.startsWith("localhost") ? "http" : "https");
-  const image = `${protocol}://${host}/og.png`;
-  return { title, description, openGraph: { title, description, type: "website", images: [image] }, twitter: { card: "summary_large_image", title, description, images: [image] } };
-}
+export const metadata: Metadata = {
+  metadataBase: new URL("https://yegortreschev.github.io"),
+  title,
+  description,
+  openGraph: { title, description, type: "website", images: ["/og.png"] },
+  twitter: { card: "summary_large_image", title, description, images: ["/og.png"] },
+};
 export default function RootLayout({children}:Readonly<{children:React.ReactNode}>){return <html lang="ru"><head><link rel="icon" href="/favicon.ico?v=2" sizes="any"/><link rel="icon" type="image/png" href="/favicon.png?v=2" sizes="512x512"/></head><body>{children}</body></html>}
