@@ -2,7 +2,7 @@ const cases = [
   { image: "Case1.png", title: "Анкета на кредит в мобильном приложении Альфа-Банка", href: "/credit-redesign" },
   { image: "Case3.png", title: "Приложение МТС Музыки для автомобиля", href: "/mts-music" },
   { image: "cs-money-thumb.png", title: "Редизайн сайта Cs.Money", href: "/cs-money" },
-  { image: "Case4.png", title: "Лидирование дизайн-системы анкет", href: "/form-design-system" },
+  { image: "Case4.png", title: "Лидирование дизайн-системы анкет сайта Альфа-Банка", href: "/form-design-system" },
 ] as const;
 
 const conceptColumns = [["Pic1.png", "Pic4.png", "Pic8.png", "Pic9.png"], ["Pic2.png", "Pic5.png", "Pic7.png", "Pic10.png"], ["Pic3.png", "Pic6.png", "Pic11.png"]];

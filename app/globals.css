@@ -114,20 +114,31 @@
 .csResults .resultBadge{width:100%;height:138px;margin-top:0;padding-inline:38px;gap:34px}
 .csResults .resultBadge strong{font-size:60px}
 
+/* Form design system case — continues the shared Alfa case system */
+.designSystemCase .caseIntro h1{line-height:1.04}
+.dsImageOnly img{margin-top:0}
+.dsBacklog img{width:72%;margin-inline:auto}
+.dsBranches img{width:49%;margin-inline:auto}
+.dsStructure img{width:43%;margin-inline:auto}
+.dsFrontend{margin-top:128px}
+.dsResults{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:34px}
+.dsResults .resultBadge{width:100%;height:138px;margin-top:0;padding-inline:38px;gap:34px}
+.dsResults .resultBadge strong{font-size:60px}
+
 @media(max-width:1023px){
   .creditCase{min-width:0}.caseShell,.caseHeader .deskShell{width:auto;margin-inline:24px}.caseHeader,.caseHeaderInner{height:72px}.caseHeader{font-size:14px}.caseHeader nav{gap:22px}
   .caseIntro{padding-top:48px}.caseIntro h1{font-size:clamp(36px,7vw,50px)}.caseRole{font-size:16px}
   .caseSection{margin-top:88px}.taskSection{margin-top:64px}.caseSection>h2,.caseResult>h2{font-size:30px}.caseSection>p{font-size:16px}
   .taskVisual,.caseCard{margin-top:36px;border-radius:28px}.caseCard{padding:28px}.caseCard h3{font-size:21px}
-  .solutionStack{gap:30px;margin-top:36px}.mtsDesignImages,.csResearchImages,.csDesignImages{gap:28px;margin-top:32px}.mtsResults,.csResults{grid-template-columns:1fr}
-  .mtsResults .resultBadge,.csResults .resultBadge{max-width:620px}.caseFooter{height:170px;margin-top:60px;padding-bottom:44px;font-size:14px}
+  .solutionStack{gap:30px;margin-top:36px}.mtsDesignImages,.csResearchImages,.csDesignImages{gap:28px;margin-top:32px}.mtsResults,.csResults,.dsResults{grid-template-columns:1fr}
+  .mtsResults .resultBadge,.csResults .resultBadge,.dsResults .resultBadge{max-width:620px}.caseFooter{height:170px;margin-top:60px;padding-bottom:44px;font-size:14px}
 }
 
 @media(max-width:600px){
   .caseShell,.caseHeader .deskShell{margin-inline:18px}.caseHeader nav{gap:14px}.caseHeader nav:first-child a:nth-child(2),.caseHeader nav:last-child a:first-child{display:none}
   .caseIntro h1{font-size:34px}.caseIntro h1 br,.caseSection>p br{display:none}.caseSection>h2,.caseResult>h2{font-size:27px}.caseSection{margin-top:72px}
   .taskVisual,.caseCard{border-radius:20px}.caseCard,.mtsDesignStack .caseCard{padding:20px}.caseCard img,.researchCard img,.solutionStack .caseCard>h3+img,.mtsWireStack .caseCard img{margin-top:28px}
-  .mtsImageOnly img,.csImageOnly img{margin-top:0}.mtsResults .resultBadge,.csResults .resultBadge{height:auto;min-height:116px;padding:22px;gap:20px;border-width:3px;border-radius:22px}.mtsResults .resultBadge strong,.csResults .resultBadge strong{font-size:42px}.resultBadge span{font-size:15px}
+  .mtsImageOnly img,.csImageOnly img,.dsImageOnly img{margin-top:0}.dsBacklog img,.dsBranches img,.dsStructure img{width:100%}.mtsResults .resultBadge,.csResults .resultBadge,.dsResults .resultBadge{height:auto;min-height:116px;padding:22px;gap:20px;border-width:3px;border-radius:22px}.mtsResults .resultBadge strong,.csResults .resultBadge strong,.dsResults .resultBadge strong{font-size:42px}.resultBadge span{font-size:15px}
   .caseFooter{height:140px}.caseFooter span{font-size:12px}
 }
 
