@@ -1,7 +1,7 @@
 const cases = [
   { image: "Case1.png", title: "Анкета на кредит в мобильном приложении Альфа-Банка", href: "/credit-redesign" },
-  { image: "Case2.png", title: "Раздел кредитов на сайте Альфа-Банка", href: "/credit-conversion" },
   { image: "Case3.png", title: "Приложение МТС Музыки для автомобиля", href: "/mts-music" },
+  { image: "cs-money-thumb.png", title: "Редизайн сайта Cs.Money", href: "/cs-money" },
   { image: "Case4.png", title: "Лидирование дизайн-системы анкет", href: "/form-design-system" },
 ] as const;
 
