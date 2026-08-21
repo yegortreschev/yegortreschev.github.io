@@ -10,6 +10,7 @@
     "build": "next build --webpack",
     "start": "next start",
     "test": "npm run build",
+    "optimize:images": "node scripts/optimize-images.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate"
   },
