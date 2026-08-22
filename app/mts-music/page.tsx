@@ -33,7 +33,7 @@ export default function MtsMusicPage() {
     <Header />
     <main className="caseShell">
       <section className="caseIntro">
-        <h1>Приложение МТС Музыки<br />для автомобиля</h1>
+        <h1>Приложение МТС Музыки<br />{" "}для автомобиля</h1>
         <p className="caseRole">Моя роль: продуктовый дизайнер</p>
       </section>
 

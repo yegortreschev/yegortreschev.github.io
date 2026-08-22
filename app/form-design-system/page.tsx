@@ -18,7 +18,7 @@ export default function FormDesignSystemPage() {
     <Header />
     <main className="caseShell">
       <section className="caseIntro">
-        <h1>Лидирование дизайн-системы<br />анкет сайта Альфа-Банка</h1>
+        <h1>Лидирование дизайн-системы<br />{" "}анкет сайта Альфа-Банка</h1>
         <p className="caseRole">Моя роль: ответственный за новый раздел дизайн-системы</p>
       </section>
 
