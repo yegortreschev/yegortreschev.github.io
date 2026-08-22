@@ -24,7 +24,7 @@ export default function CreditRedesignPage() {
     <Header />
     <main className="caseShell">
       <section className="caseIntro">
-        <h1>Анкета на кредит в мобильном<br />приложении Альфа-Банка</h1>
+        <h1>Анкета на кредит в мобильном<br />{" "}приложении Альфа-Банка</h1>
         <p className="caseRole">Моя роль: продуктовый дизайнер</p>
       </section>
 
