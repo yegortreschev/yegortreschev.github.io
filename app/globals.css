@@ -144,7 +144,7 @@
 }
 
 @media(max-width:600px){
-  .caseShell,.caseHeader .deskShell{margin-inline:18px}.caseHeader nav{gap:14px}.caseHeader nav:first-child a:nth-child(2),.caseHeader nav:last-child a:first-child{display:none}
+  .caseShell,.caseHeader .deskShell{margin-inline:18px}.caseHeader nav{gap:14px}.caseHeader nav:first-child a:nth-child(2){display:none}
   .caseIntro h1{font-size:34px;line-height:1.12}.caseIntro h1 br,.caseSection>p br{display:none}.caseSection>h2,.caseResult>h2{font-size:27px}.caseSection{margin-top:72px}
   .taskVisual,.caseCard{border-radius:20px}.caseCard,.mtsDesignStack .caseCard{padding:20px}.caseCard img,.researchCard img,.solutionStack .caseCard>h3+img,.mtsWireStack .caseCard img{margin-top:28px}
   .mtsImageOnly img,.csImageOnly img,.dsImageOnly img{margin-top:0}.dsBacklog img,.dsBranches img,.dsStructure img{width:100%}.mtsResults .resultBadge,.csResults .resultBadge,.dsResults .resultBadge{height:auto;min-height:116px;padding:22px;gap:20px;border-width:3px;border-radius:22px}.mtsResults .resultBadge strong,.csResults .resultBadge strong,.dsResults .resultBadge strong{font-size:42px}.resultBadge span{font-size:15px}
@@ -171,6 +171,7 @@
 .deskHero h1{margin:0;font-size:50px;font-weight:600;line-height:normal;letter-spacing:-.5px}
 .deskHero p{margin:8px 0 0;font-size:21px;line-height:1.35;letter-spacing:-.21px}
 .deskHero strong{color:#00a6f0;font-weight:600}
+.mobileHome .heroTitle strong{color:#00a6f0;font-weight:600}
 .deskTelegram{align-self:start;margin-top:0;padding:16px 20px;border-radius:16px;background:#00a6f0;color:#fff;font-size:18px;line-height:1.4;letter-spacing:-.18px;white-space:nowrap;transition:background .2s}
 .deskTelegram:hover{background:#0097dc}
 .deskCases{display:grid;gap:120px}

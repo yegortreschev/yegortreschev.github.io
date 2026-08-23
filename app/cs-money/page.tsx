@@ -12,7 +12,7 @@ function Header() {
   return <header className="caseHeader">
     <div className="deskShell caseHeaderInner">
       <nav><a href="/#work">Кейсы</a><a href="/#hobbies">Обо мне</a></nav>
-      <nav><a href="/cv.pdf" download>Скачать CV</a><a href="https://t.me/yegortreschev" target="_blank" rel="noreferrer">Телеграм</a></nav>
+      <nav><a href="https://t.me/yegortreschev" target="_blank" rel="noreferrer">Написать в телеграм</a></nav>
     </div>
   </header>;
 }
