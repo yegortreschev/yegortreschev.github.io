@@ -74,7 +74,13 @@
 .caseHeaderInner{height:96px;display:flex;align-items:center;justify-content:space-between}
 .caseHeader nav{display:flex;gap:42px}.caseHeader a{transition:opacity .2s}.caseHeader a:hover{opacity:.55}
 .caseIntro{padding-top:74px}.caseIntro h1{margin:0;font-size:50px;font-style:normal;font-weight:500;line-height:normal;letter-spacing:-.5px}
-.caseRole{margin:20px 0 0;color:#a3a3a3;font-size:18px;line-height:1.4;letter-spacing:-.18px}
+.caseMeta{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:62px}
+.caseMeta span{display:block;color:#a3a3a3;font-size:16px;line-height:1.4;letter-spacing:-.16px}
+.caseMeta p{margin:4px 0 0;font-size:18px;line-height:1.35;letter-spacing:-.18px}
+.caseOverview{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:72px;margin-top:122px}
+.caseOverview h2{margin:0;font-size:36px;font-weight:500;line-height:normal;letter-spacing:-.36px}
+.caseOverview p{margin:18px 0 0;font-size:18px;line-height:1.35;letter-spacing:-.18px}
+.caseHeroVisual{margin-top:54px}
 .caseSection{margin-top:128px}.taskSection{margin-top:85px}
 .caseSection>h2,.caseResult>h2{margin:0;font-size:36px;font-style:normal;font-weight:500;line-height:normal;letter-spacing:-.36px}
 .caseSection>p{margin:18px 0 0;font-size:18px;font-weight:400;line-height:1.4;letter-spacing:-.18px}.caseLink{color:#00a6f0;font-weight:500}
@@ -86,7 +92,7 @@
 .researchResultsTitle{margin-top:85px!important;font-size:32px!important;letter-spacing:-.32px!important}
 .solutionStack{display:grid;gap:50px;margin-top:50px}.solutionStack .caseCard{margin-top:0}
 .solutionStack .caseCard>h3+img{margin-top:48px}
-.caseResult{margin-top:128px}.resultBadge{width:517px;height:138px;margin-top:34px;border:4px solid #00a6f0;border-radius:30px;display:flex;align-items:center;padding:0 28px;gap:32px}
+.caseResult{margin-top:128px}.caseResult>p{margin:18px 0 0;font-size:18px;line-height:1.4;letter-spacing:-.18px}.resultBadge{width:517px;height:138px;margin-top:34px;border:4px solid #00a6f0;border-radius:30px;display:flex;align-items:center;padding:0 28px;gap:32px}
 .resultBadge strong{font-size:64px;font-weight:500;line-height:1;letter-spacing:-1.2px;white-space:nowrap}.resultBadge span{font-size:18px;line-height:1.25;letter-spacing:-.18px}
 .caseFooter{height:220px;margin-top:90px;display:flex;align-items:flex-end;justify-content:space-between;padding-bottom:62px;color:#9b9b9b;font-size:16px;letter-spacing:-.16px}.caseFooter a{color:#111;text-decoration:none}
 
@@ -136,7 +142,7 @@
 
 @media(max-width:1023px){
   .creditCase{min-width:0}.caseShell,.caseHeader .deskShell{width:auto;margin-inline:24px}.caseHeader,.caseHeaderInner{height:72px}.caseHeader{font-size:14px}.caseHeader nav{gap:22px}
-  .caseIntro{padding-top:48px}.caseIntro h1{font-size:clamp(36px,7vw,50px)}.caseRole{font-size:16px}
+  .caseIntro{padding-top:48px}.caseIntro h1{font-size:clamp(36px,7vw,50px)}.caseMeta{margin-top:48px}.caseMeta p{font-size:16px}.caseOverview{gap:32px;margin-top:88px}.caseOverview h2{font-size:30px}.caseOverview p{font-size:16px}.caseHeroVisual{margin-top:40px}
   .caseSection{margin-top:88px}.taskSection{margin-top:64px}.caseSection>h2,.caseResult>h2{font-size:30px}.caseSection>p{font-size:16px}
   .taskVisual,.caseCard{margin-top:36px;border-radius:28px}.caseCard{padding:28px}.caseCard h3{font-size:21px}
   .solutionStack{gap:30px;margin-top:36px}.mtsDesignImages,.csResearchImages,.csDesignImages{gap:28px;margin-top:32px}.mtsResults,.csResults,.dsResults{grid-template-columns:1fr}
@@ -145,7 +151,7 @@
 
 @media(max-width:600px){
   .caseShell,.caseHeader .deskShell{margin-inline:18px}.caseHeader nav{gap:14px}.caseHeader nav:first-child a:nth-child(2){display:none}
-  .caseIntro h1{font-size:34px;line-height:1.12}.caseIntro h1 br,.caseSection>p br{display:none}.caseSection>h2,.caseResult>h2{font-size:27px}.caseSection{margin-top:72px}
+  .caseIntro h1{font-size:34px;line-height:1.12}.caseIntro h1 br,.caseSection>p br,.caseResult>p br,.caseMeta br{display:none}.caseMeta{grid-template-columns:1fr;gap:24px;margin-top:38px}.caseOverview{grid-template-columns:1fr;gap:42px;margin-top:72px}.caseOverview h2{font-size:27px}.caseOverview p{margin-top:12px}.caseHeroVisual{margin-top:36px}.caseSection>h2,.caseResult>h2{font-size:27px}.caseResult>p{font-size:16px}.caseSection{margin-top:72px}
   .taskVisual,.caseCard{border-radius:20px}.caseCard,.mtsDesignStack .caseCard{padding:20px}.caseCard img,.researchCard img,.solutionStack .caseCard>h3+img,.mtsWireStack .caseCard img{margin-top:28px}
   .mtsImageOnly img,.csImageOnly img,.dsImageOnly img{margin-top:0}.dsBacklog img,.dsBranches img,.dsStructure img{width:100%}.mtsResults .resultBadge,.csResults .resultBadge,.dsResults .resultBadge{height:auto;min-height:116px;padding:22px;gap:20px;border-width:3px;border-radius:22px}.mtsResults .resultBadge strong,.csResults .resultBadge strong,.dsResults .resultBadge strong{font-size:42px}.resultBadge span{font-size:15px}
   .caseFooter{height:140px}.caseFooter span{font-size:12px}
