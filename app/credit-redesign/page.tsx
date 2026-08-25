@@ -1,4 +1,5 @@
 import NextCase from "../NextCase";
+import ResultBadge from "../ResultBadge";
 
 const blocks = [
   { title: "Первый шаг анкеты", image: "First_step.webp", alt: "Сравнение первого шага анкеты до и после редизайна" },
@@ -28,7 +29,7 @@ export default function CreditRedesignPage() {
         <div className="caseMeta">
           <div>
             <span>Команда</span>
-            <p>Product owner, системный аналитик, 2 frontend<br />разработчика, backend разработчик, QA-инженер</p>
+            <p>Product owner, системный аналитик, 2 frontend разработчика, backend разработчик, QA-инженер</p>
           </div>
           <div>
             <span>Моя роль</span>
@@ -58,15 +59,23 @@ export default function CreditRedesignPage() {
 
       <section className="caseSection">
         <h2>UX-исследование</h2>
-        <p>Чтобы выявить проблемы текущей анкеты провёл глубинное интервью<br />{" "}с 7 респондентами. По количественным метрикам было не определить,<br />{" "}где настоящие боли и барьеры в UX</p>
+        <p>Чтобы выявить проблемы текущей анкеты провёл глубинное интервью с 7 респондентами. По количественным метрикам было не определить, где настоящие боли и барьеры в UX</p>
         <ImageCard className="researchCard">
           <h3>Скриншоты подготовки исследования</h3>
           <p>План, гипотезы, часть скрипта</p>
           <img loading="lazy" decoding="async" src="/case-credit/Podgotovka_issled.webp" alt="План, гипотезы и часть скрипта исследования" />
         </ImageCard>
 
+        <div className="prototypeBlock">
+          <h2>Вайбкод-прототип</h2>
+          <p>На бою кредитной анкеты тест проводить не получится: у пользователей будет портиться кредитная история. Сделал кликабельный прототип в Figma Make, чтобы у респондентов опыт использования был максимально близок к реальному продукту</p>
+          <ImageCard className="prototypeCard">
+            <img loading="lazy" decoding="async" src="/case-credit/Vibe_for_case.webp" alt="Кликабельный вайбкод-прототип кредитной анкеты в Figma Make" />
+          </ImageCard>
+        </div>
+
         <h2 className="researchResultsTitle">Результаты исследования</h2>
-        <p>Больше всего вызывал затруднения последний шаг,. На исследовании<br />{" "}оказалось, что весь экран, начиная с шапки и заканчивая механикой карточек<br />{" "}не очевиден. Пользователи его воспринимают не как шаг анкеты, а как<br />{" "}<strong>каталог продуктов</strong></p>
+        <p>Больше всего вызывал затруднения последний шаг,. На исследовании оказалось, что весь экран, начиная с шапки и заканчивая механикой карточек не очевиден. Пользователи его воспринимают не как шаг анкеты, а как <strong>каталог продуктов</strong></p>
         <ImageCard>
           <h3>Главные проблемы текущей анкеты</h3>
           <p>Которые выявил на исследовании</p>
@@ -76,6 +85,11 @@ export default function CreditRedesignPage() {
 
       <section className="caseSection solutionSection">
         <h2>Решение</h2>
+        <div className="constraintCard">
+          <svg className="constraintBorder" aria-hidden="true"><rect x="1" y="1" width="calc(100% - 2px)" height="calc(100% - 2px)" rx="27" fill="none" stroke="#CBCBCB" strokeWidth="2" strokeDasharray="12 12" strokeDashoffset="6" strokeLinecap="round" vectorEffect="non-scaling-stroke" /></svg>
+          <h3>Ограничение</h3>
+          <p>Данные, которые клиент оставляет банку, должны остаться такими же, как в текущей анкете. Если безвозвратно удалять поля, то увеличивается риск-профиль клиента и ломается скоринг-модель. Поэтому часть обратной связи, полученной на UX-исследовании, пришлось оставить на будущее</p>
+        </div>
         <div className="solutionStack">
           {blocks.map(block => <ImageCard key={block.image}>
             <h3>{block.title}</h3>
@@ -83,7 +97,7 @@ export default function CreditRedesignPage() {
           </ImageCard>)}
           <ImageCard>
             <h3>Одобренный кредит</h3>
-            <p>На исследовании пользователи отмечали, что этот шаг считывается,<br />как каталог. В новом дизайне переходим в этот формат</p>
+            <p>На исследовании пользователи отмечали, что этот шаг считывается, как каталог. В новом дизайне переходим в этот формат</p>
             <img loading="lazy" decoding="async" src="/case-credit/Odobrenny_credit.webp" alt="Сравнение экрана одобренного кредита до и после редизайна" />
           </ImageCard>
         </div>
@@ -91,8 +105,8 @@ export default function CreditRedesignPage() {
 
       <section className="caseResult" id="result">
         <h2>Результат</h2>
-        <p>Тестировали через A/B-тест старую анкету против новой. Смотрели всю<br />{" "}воронку, но главное было поднять общую конверсию в выдачу</p>
-        <div className="resultBadge"><strong>+11 п.п.</strong><span>Общая конверсия<br />в выдачу кредита</span></div>
+        <p>Тестировали через A/B-тест старую анкету против новой. Смотрели всю воронку, но главное было поднять общую конверсию в выдачу</p>
+        <ResultBadge value="+11 п.п.">Общая конверсия<br />в выдачу кредита</ResultBadge>
       </section>
     </main>
     <NextCase href="/mts-music" image="Case3.webp" title="Приложение МТС Музыки для автомобиля" />

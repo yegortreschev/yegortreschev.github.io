@@ -1,4 +1,5 @@
 import NextCase from "../NextCase";
+import ResultBadge from "../ResultBadge";
 
 const wireframes = [
   { title: "Авторизация", image: "Wire1.webp" },
@@ -28,47 +29,90 @@ function ImageCard({ children, className = "" }: { children: React.ReactNode; cl
   return <div className={`caseCard ${className}`}>{children}</div>;
 }
 
+function DashedInfoCard({ title, children }: { title: string; children: React.ReactNode }) {
+  return <div className="constraintCard mtsInfoCard">
+    <svg className="constraintBorder" aria-hidden="true"><rect x="1" y="1" width="calc(100% - 2px)" height="calc(100% - 2px)" rx="27" fill="none" stroke="#CBCBCB" strokeWidth="2" strokeDasharray="12 12" strokeDashoffset="6" strokeLinecap="round" vectorEffect="non-scaling-stroke" /></svg>
+    <h3>{title}</h3>
+    {children}
+  </div>;
+}
+
 export default function MtsMusicPage() {
   return <div className="creditCase mtsCase">
     <Header />
     <main className="caseShell">
       <section className="caseIntro">
         <h1>Приложение МТС Музыки<br />{" "}для автомобиля</h1>
-        <p className="caseRole">Моя роль: продуктовый дизайнер</p>
+        <div className="caseMeta">
+          <div>
+            <span>Команда</span>
+            <p>Product owner, системный аналитик, 5 frontend разработчиков, 3 backend разработчика, 3 QA-инженера</p>
+          </div>
+          <div>
+            <span>Моя роль</span>
+            <p>Продуктовый дизайнер</p>
+          </div>
+        </div>
       </section>
 
-      <section className="caseSection taskSection">
-        <h2>Задача</h2>
-        <p>Сделать MVP-версию основных сценариев приложения, чтобы запуститься<br />и начать тестировать</p>
+      <section className="caseOverview" aria-label="О проекте">
+        <div>
+          <h2>Проблема</h2>
+          <p>Нужно в сжатые сроки запустить приложение музыки для авто, так как партнёры в автосалонах через полгода начнут продвижение</p>
+        </div>
+        <div>
+          <h2>Задача</h2>
+          <p>Сделать MVP-версию основных сценариев приложения, чтобы запуститься, стартовать первые продажи и сбор метрик</p>
+        </div>
+        <div>
+          <h2>Результат</h2>
+          <p>За 2 месяца сделал дизайн от концепции до подготовки к разработке. Проект запустили в срок</p>
+        </div>
+      </section>
+
+      <section className="caseHeroVisual" aria-label="Главный экран МТС Музыки для автомобиля">
         <div className="taskVisual"><img decoding="async" fetchPriority="high" src="/case-mts/Thumb.webp" alt="Плеер МТС Музыки для автомобиля" /></div>
       </section>
 
       <section className="caseSection">
         <h2>Исследование конкурентов<br />и поиск референсов</h2>
-        <p>Проанализировал конкурентов в музыкальном сегменте и механики<br />автомобильных приложений</p>
+        <p>Проанализировал конкурентов в музыкальном сегменте и механики автомобильных приложений</p>
         <ImageCard className="mtsImageOnly"><img loading="lazy" decoding="async" src="/case-mts/Issled.webp" alt="Исследование музыкальных сервисов и автомобильных приложений" /></ImageCard>
       </section>
 
       <section className="caseSection solutionSection">
         <h2>Вайрфрейминг</h2>
-        <p>Сделал вайрфреймы основных экранов и согласовал<br />их со стейкхолдерами продукта</p>
+        <DashedInfoCard title="Детали работы">
+          <ul>
+            <li>Для автомобильных интерфейсов важны крупные контролы, короткие сценарии, ограниченная глубина навигации, возможность управления воспроизведением с руля</li>
+            <li>Запуск приложения планировался на определённых экранах нескольких моделей партнеров. Размеры планшетов мы знали заранее, что упростило работу — не надо адаптировать под многочисленные автомобильные мониторы</li>
+            <li>Чтобы согласовать скелет дизайна с клиентом, начал с вайфреймов и обсуждения основного UX</li>
+          </ul>
+        </DashedInfoCard>
         <div className="solutionStack mtsWireStack">{wireframes.map(item => <ImageCard key={item.image}><h3>{item.title}</h3><img loading="lazy" decoding="async" src={`/case-mts/${item.image}`} alt={`Вайрфреймы: ${item.title.toLowerCase()}`} /></ImageCard>)}</div>
       </section>
 
       <section className="caseSection solutionSection">
         <h2>Дизайн</h2>
+        <DashedInfoCard title="Ограничения">
+          <ul>
+            <li>Для ускорения работы нужно было адаптировать уже готовые на разработке элементы онлайн-кинотеатра для автомобилей к музыке</li>
+            <li>Сценарии должны быть максимально простые и для пользователя, и для разработки</li>
+            <li>После отрисовки экрана проходила обязательная проверка на соответствие автомобильному контексту</li>
+          </ul>
+        </DashedInfoCard>
         <div className="solutionStack mtsDesignStack">{designs.map(item => <ImageCard key={item.title}><h3>{item.title}</h3>{"description" in item && <p>{item.description}</p>}<div className="mtsDesignImages">{item.images.map(image => <img loading="lazy" decoding="async" key={image} src={`/case-mts/${image}`} alt={`${item.title} — макет и комментарии`} />)}</div></ImageCard>)}</div>
       </section>
 
       <section className="caseSection">
         <h2>Состояния и подготовка к разработке</h2>
-        <p>Подготовил состояния, UI-kit и интерактивный прототип<br />для разработки</p>
+        <p>Подготовил состояния, UI-kit и интерактивный прототип для разработки</p>
         <ImageCard><h3>Состояния и документация</h3><img loading="lazy" decoding="async" src="/case-mts/All.webp" alt="Состояния и документация приложения" /></ImageCard>
       </section>
 
       <section className="caseResult">
         <h2>Результат</h2>
-        <div className="mtsResults"><div className="resultBadge"><strong>2 мес.</strong><span>На весь дизайн-процесс</span></div><div className="resultBadge"><strong>6 мес.</strong><span>От старта дизайна<br />до первых тестов MVP</span></div></div>
+        <div className="mtsResults"><ResultBadge value="2 мес.">На весь дизайн-процесс</ResultBadge><ResultBadge value="6 мес.">От старта дизайна<br />до первых тестов MVP</ResultBadge></div>
       </section>
     </main>
     <NextCase href="/cs-money" image="cs-money-thumb.webp" title="Редизайн сайта Cs.Money" />

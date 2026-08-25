@@ -69,31 +69,39 @@
 
 /* Credit application case — desktop reference */
 .creditCase{min-width:1024px;background:#fff;color:#0a0a0a;font-family:Inter,sans-serif}
+.creditCase p{max-width:760px}
 .caseShell{width:85.8%;max-width:1240px;margin-inline:auto}
 .caseHeader{position:sticky;top:0;z-index:50;height:96px;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);font-size:16px;letter-spacing:-.16px}
 .caseHeaderInner{height:96px;display:flex;align-items:center;justify-content:space-between}
 .caseHeader nav{display:flex;gap:42px}.caseHeader a{transition:opacity .2s}.caseHeader a:hover{opacity:.55}
 .caseIntro{padding-top:74px}.caseIntro h1{margin:0;font-size:50px;font-style:normal;font-weight:500;line-height:normal;letter-spacing:-.5px}
-.caseMeta{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:62px}
+.caseMeta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:72px;margin-top:62px}
+.caseMeta>div:nth-child(2){grid-column:2}
 .caseMeta span{display:block;color:#a3a3a3;font-size:16px;line-height:1.4;letter-spacing:-.16px}
-.caseMeta p{margin:4px 0 0;font-size:18px;line-height:1.35;letter-spacing:-.18px}
+.caseMeta p{margin:4px 0 0;font-size:16px;line-height:1.35;letter-spacing:-.16px}
 .caseOverview{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:72px;margin-top:122px}
 .caseOverview h2{margin:0;font-size:36px;font-weight:500;line-height:normal;letter-spacing:-.36px}
-.caseOverview p{margin:18px 0 0;font-size:18px;line-height:1.35;letter-spacing:-.18px}
+.caseOverview p{margin:18px 0 0;font-size:16px;line-height:1.35;letter-spacing:-.16px}
 .caseHeroVisual{margin-top:54px}
 .caseSection{margin-top:128px}.taskSection{margin-top:85px}
 .caseSection>h2,.caseResult>h2{margin:0;font-size:36px;font-style:normal;font-weight:500;line-height:normal;letter-spacing:-.36px}
-.caseSection>p{margin:18px 0 0;font-size:18px;font-weight:400;line-height:1.4;letter-spacing:-.18px}.caseLink{color:#00a6f0;font-weight:500}
+.caseSection>p{margin:18px 0 0;font-size:16px;font-weight:400;line-height:1.4;letter-spacing:-.16px}.caseLink{color:#00a6f0;font-weight:500}
 .taskVisual{margin-top:50px;background:#f5f5f5;border-radius:48px;overflow:hidden}.taskVisual img{display:block;width:100%;height:auto}
 .caseCard{margin-top:50px;padding:48px;background:#f5f5f5;border-radius:48px;overflow:hidden}
 .caseCard h3{margin:0;font-size:24px;font-style:normal;font-weight:500;line-height:normal;letter-spacing:-.24px}
 .caseCard>p{margin:14px 0 0;font-size:14px;font-weight:400;line-height:1.4;letter-spacing:-.14px}
 .caseCard img{display:block;width:100%;height:auto;margin-top:44px}.researchCard img{margin-top:38px}
-.researchResultsTitle{margin-top:85px!important;font-size:32px!important;letter-spacing:-.32px!important}
+.prototypeBlock{margin-top:128px}.prototypeBlock h2{margin:0;font-size:36px;font-weight:500;line-height:normal;letter-spacing:-.36px}.prototypeBlock>p{margin:18px 0 0;font-size:16px;line-height:1.4;letter-spacing:-.16px}.prototypeCard img{margin-top:0}
+.researchResultsTitle{margin-top:128px!important;font-size:36px!important;letter-spacing:-.36px!important}
 .solutionStack{display:grid;gap:50px;margin-top:50px}.solutionStack .caseCard{margin-top:0}
+.constraintCard{position:relative;width:824px;max-width:100%;margin-top:50px;padding:32px;border-radius:28px}
+.constraintBorder{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.constraintCard h3{margin:0;font-size:24px;font-weight:500;line-height:normal;letter-spacing:-.24px}
+.constraintCard p{margin:12px 0 0;font-size:16px;line-height:1.4;letter-spacing:-.16px}
 .solutionStack .caseCard>h3+img{margin-top:48px}
-.caseResult{margin-top:128px}.caseResult>p{margin:18px 0 0;font-size:18px;line-height:1.4;letter-spacing:-.18px}.resultBadge{width:517px;height:138px;margin-top:34px;border:4px solid #00a6f0;border-radius:30px;display:flex;align-items:center;padding:0 28px;gap:32px}
-.resultBadge strong{font-size:64px;font-weight:500;line-height:1;letter-spacing:-1.2px;white-space:nowrap}.resultBadge span{font-size:18px;line-height:1.25;letter-spacing:-.18px}
+.caseResult{margin-top:128px}.caseResult>p{margin:18px 0 0;font-size:16px;line-height:1.4;letter-spacing:-.16px}.resultBadge{position:relative;width:517px;height:138px;margin-top:34px;border-radius:32px;display:flex;align-items:center;padding:32px;gap:32px}
+.resultBorder{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.resultBadge strong{font-size:64px;font-weight:500;line-height:1;letter-spacing:-1.2px;white-space:nowrap}.resultBadge span{font-size:16px;line-height:1.25;letter-spacing:-.16px}
 .caseFooter{height:220px;margin-top:90px;display:flex;align-items:flex-end;justify-content:space-between;padding-bottom:62px;color:#9b9b9b;font-size:16px;letter-spacing:-.16px}.caseFooter a{color:#111;text-decoration:none}
 
 /* MTS Music case — reuses the Alfa case system */
@@ -107,8 +115,10 @@
 .mtsDesignImages{display:grid;gap:42px;margin-top:48px}
 .mtsDesignStack .caseCard>p+.mtsDesignImages{margin-top:42px}
 .mtsDesignImages img{margin-top:0}
+.mtsInfoCard ul{max-width:760px;margin:12px 0 0;padding-left:24px;list-style:disc outside;font-size:16px;line-height:1.4;letter-spacing:-.16px}
+.mtsInfoCard li+li{margin-top:4px}
 .mtsResults{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:34px}
-.mtsResults .resultBadge{width:100%;height:138px;margin-top:0;padding-inline:38px;gap:34px}
+.mtsResults .resultBadge{width:100%;height:138px;margin-top:0;padding:32px;gap:34px}
 .mtsResults .resultBadge strong{font-size:60px}
 
 /* Cs.Money case — shares the Alfa and MTS case system */
@@ -116,8 +126,9 @@
 .csResearchImages,.csDesignImages{display:grid;gap:42px;margin-top:48px}
 .csResearchImages img,.csDesignImages img{margin-top:0}
 .csImageOnly img{margin-top:0}
+.csDesignSystemCard img{width:72%;margin:0 auto}
 .csResults{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:34px}
-.csResults .resultBadge{width:100%;height:138px;margin-top:0;padding-inline:38px;gap:34px}
+.csResults .resultBadge{width:100%;height:138px;margin-top:0;padding:32px;gap:34px}
 .csResults .resultBadge strong{font-size:60px}
 
 /* Form design system case — continues the shared Alfa case system */
@@ -128,7 +139,7 @@
 .dsStructure img{width:43%;margin-inline:auto}
 .dsFrontend{margin-top:128px}
 .dsResults{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:34px}
-.dsResults .resultBadge{width:100%;height:138px;margin-top:0;padding-inline:38px;gap:34px}
+.dsResults .resultBadge{width:100%;height:138px;margin-top:0;padding:32px;gap:34px}
 .dsResults .resultBadge strong{font-size:60px}
 
 /* Case-to-case navigation mirrors the project cards on the homepage. */
@@ -142,18 +153,18 @@
 
 @media(max-width:1023px){
   .creditCase{min-width:0}.caseShell,.caseHeader .deskShell{width:auto;margin-inline:24px}.caseHeader,.caseHeaderInner{height:72px}.caseHeader{font-size:14px}.caseHeader nav{gap:22px}
-  .caseIntro{padding-top:48px}.caseIntro h1{font-size:clamp(36px,7vw,50px)}.caseMeta{margin-top:48px}.caseMeta p{font-size:16px}.caseOverview{gap:32px;margin-top:88px}.caseOverview h2{font-size:30px}.caseOverview p{font-size:16px}.caseHeroVisual{margin-top:40px}
+  .caseIntro{padding-top:48px}.caseIntro h1{font-size:clamp(36px,7vw,50px)}.caseMeta{gap:32px;margin-top:48px}.caseMeta p{font-size:16px}.caseOverview{gap:32px;margin-top:88px}.caseOverview h2{font-size:30px}.caseOverview p{font-size:16px}.caseHeroVisual{margin-top:40px}.prototypeBlock{margin-top:88px}.prototypeBlock h2{font-size:30px;letter-spacing:-.3px}.prototypeBlock>p{font-size:16px}.researchResultsTitle{margin-top:88px!important;font-size:30px!important;letter-spacing:-.3px!important}
   .caseSection{margin-top:88px}.taskSection{margin-top:64px}.caseSection>h2,.caseResult>h2{font-size:30px}.caseSection>p{font-size:16px}
   .taskVisual,.caseCard{margin-top:36px;border-radius:28px}.caseCard{padding:28px}.caseCard h3{font-size:21px}
-  .solutionStack{gap:30px;margin-top:36px}.mtsDesignImages,.csResearchImages,.csDesignImages{gap:28px;margin-top:32px}.mtsResults,.csResults,.dsResults{grid-template-columns:1fr}
+  .constraintCard{margin-top:36px}.constraintCard h3{font-size:21px}.constraintCard p,.mtsInfoCard ul{font-size:16px}.solutionStack{gap:30px;margin-top:36px}.mtsDesignImages,.csResearchImages,.csDesignImages{gap:28px;margin-top:32px}.mtsResults,.csResults,.dsResults{grid-template-columns:1fr}
   .mtsResults .resultBadge,.csResults .resultBadge,.dsResults .resultBadge{max-width:620px}.caseFooter{height:170px;margin-top:60px;padding-bottom:44px;font-size:14px}
 }
 
 @media(max-width:600px){
   .caseShell,.caseHeader .deskShell{margin-inline:18px}.caseHeader nav{gap:14px}.caseHeader nav:first-child a:nth-child(2){display:none}
-  .caseIntro h1{font-size:34px;line-height:1.12}.caseIntro h1 br,.caseSection>p br,.caseResult>p br,.caseMeta br{display:none}.caseMeta{grid-template-columns:1fr;gap:24px;margin-top:38px}.caseOverview{grid-template-columns:1fr;gap:42px;margin-top:72px}.caseOverview h2{font-size:27px}.caseOverview p{margin-top:12px}.caseHeroVisual{margin-top:36px}.caseSection>h2,.caseResult>h2{font-size:27px}.caseResult>p{font-size:16px}.caseSection{margin-top:72px}
-  .taskVisual,.caseCard{border-radius:20px}.caseCard,.mtsDesignStack .caseCard{padding:20px}.caseCard img,.researchCard img,.solutionStack .caseCard>h3+img,.mtsWireStack .caseCard img{margin-top:28px}
-  .mtsImageOnly img,.csImageOnly img,.dsImageOnly img{margin-top:0}.dsBacklog img,.dsBranches img,.dsStructure img{width:100%}.mtsResults .resultBadge,.csResults .resultBadge,.dsResults .resultBadge{height:auto;min-height:116px;padding:22px;gap:20px;border-width:3px;border-radius:22px}.mtsResults .resultBadge strong,.csResults .resultBadge strong,.dsResults .resultBadge strong{font-size:42px}.resultBadge span{font-size:15px}
+  .caseIntro h1{font-size:34px;line-height:1.12}.caseIntro h1 br,.caseSection>p br,.caseResult>p br,.caseMeta br{display:none}.caseMeta{grid-template-columns:1fr;gap:24px;margin-top:38px}.caseMeta>div:nth-child(2){grid-column:1}.caseOverview{grid-template-columns:1fr;gap:42px;margin-top:72px}.caseOverview h2{font-size:27px}.caseOverview p{margin-top:12px}.caseHeroVisual{margin-top:36px}.caseSection>h2,.caseResult>h2{font-size:27px}.caseResult>p{font-size:16px}.caseSection{margin-top:72px}
+  .prototypeBlock{margin-top:72px}.prototypeBlock h2{font-size:27px;letter-spacing:-.27px}.researchResultsTitle{margin-top:72px!important;font-size:27px!important;letter-spacing:-.27px!important}.constraintCard{padding:24px;border-radius:20px}.taskVisual,.caseCard{border-radius:20px}.caseCard,.mtsDesignStack .caseCard{padding:20px}.caseCard img,.researchCard img,.solutionStack .caseCard>h3+img,.mtsWireStack .caseCard img{margin-top:28px}.prototypeCard img{margin-top:0}
+  .mtsImageOnly img,.csImageOnly img,.dsImageOnly img{margin-top:0}.csDesignSystemCard img,.dsBacklog img,.dsBranches img,.dsStructure img{width:100%}.resultBadge,.mtsResults .resultBadge,.csResults .resultBadge,.dsResults .resultBadge{width:100%;height:auto;min-height:116px;padding:32px;gap:20px;border-radius:32px}.mtsResults .resultBadge strong,.csResults .resultBadge strong,.dsResults .resultBadge strong{font-size:42px}.resultBadge span{font-size:15px}
   .caseFooter{height:140px}.caseFooter span{font-size:12px}
   .nextCase{margin-top:96px}
   .nextCase>h2{margin-bottom:32px;font-size:34px;letter-spacing:-.34px}
@@ -212,6 +223,9 @@
   .mobileHome{display:block}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* Result cards use only the SVG dash contour at every breakpoint. */
+.creditCase .resultBadge{border:0;padding:32px;border-radius:32px}
 
 /* Senior portfolio refinement */
 .header{position:sticky;top:0;z-index:20;width:100%;height:72px;padding:0;background:color-mix(in srgb,var(--bg) 94%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
@@ -375,10 +389,32 @@ body{font-family:Inter,"Helvetica Neue",Arial,sans-serif}
   .taskSection{margin-top:56px}
   .caseCard h3{line-height:1.25}
   .caseResult{margin-top:72px}
-  .resultBadge{width:100%;max-width:100%;height:auto;min-height:116px;padding:22px;gap:20px;border-width:3px;border-radius:22px}
+  .resultBadge{width:100%;max-width:100%;height:auto;min-height:116px;gap:20px;border-width:0}
   .resultBadge strong{font-size:42px}
 }
 
 /* Consistent medium-weight headings across both homepage layouts. */
 .desktopHome :is(h1,h2,h3),
 .mobileHome :is(h1,h2,h3){font-weight:500}
+
+/* Keep MTS detail cards as real, visibly bulleted lists after resets. */
+.creditCase .mtsInfoCard ul{max-width:760px;margin:12px 0 0;padding:0;list-style:none;font-size:16px;line-height:1.4;letter-spacing:-.16px}
+.creditCase .mtsInfoCard li{position:relative;padding-left:20px}
+.creditCase .mtsInfoCard li::before{content:"•";position:absolute;left:0;top:0}
+.creditCase .mtsInfoCard li+li{margin-top:4px}
+
+@media(max-width:720px){
+  .creditCase .mtsInfoCard ul{font-size:16px}
+}
+
+/* Final shared case typography override. Keep body copy consistent at 16px. */
+.creditCase :is(
+  .caseMeta p,
+  .caseOverview p,
+  .caseSection>p,
+  .prototypeBlock>p,
+  .constraintCard p,
+  .constraintCard ul,
+  .caseResult>p,
+  .resultBadge span
+){font-size:16px;line-height:1.5;letter-spacing:-.16px}
